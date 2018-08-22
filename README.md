@@ -1,3 +1,7 @@
+# Kurdish 
+
+Welcome to `Kurdish Language Library` - a Python Library for converting characters and numbers in Persian, English and also Arabic to Kurdish and vice versa.
+
 
 
 ## Installation
