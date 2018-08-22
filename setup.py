@@ -1,14 +1,14 @@
 import setuptools
 
-with open('README.md', 'r', encoding="utf-8") as f:
+with open('README.txt', 'r', encoding="utf-8") as f:
     long_description = f.read()
 
 setuptools.setup(
 	name='Kurdish',
-	version='1.0.0',
+	version='1.0.3',
 	author='Dolan Hêriş',
 	author_email='dolanskurd@mail.com',
-	url='https://github.com/dolanskurd',
+	url='https://github.com/dolanskurd/Kurdish',
 	description=('Kurdish Language Library for converting characters and numbers in Persian, English and also Arabic to Kurdish and vice versa.'),
 	long_description = long_description,
 	keywords='Kurdish Language Module Library',
