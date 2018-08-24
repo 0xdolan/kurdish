@@ -6,22 +6,28 @@ Welcome to `Kurdish Language Library` - a Python Library for converting characte
 
 ## Installation
 
-install the library as follows:
+Installing the module:
 
 `
 pip install Kurdish
 `
 
+* [Installing Python modules](https://docs.python.org/3/installing/index.html "Installing Python modules")
+
+------------
+
+## How to use the module
+
 
 * Converting English Characters to Kurdish Based on KRG Unicode System (http://unicode.ekrg.org/ku_unicodes.html):
 ```python
-print('Kurdish.convert_En_Char_to_Ku',Kurdish.convert_En_Char_to_Ku('bexSyn le gwnah w heLe CawpoSyne! \n to Con heReSet be uagry pRtyne? \n bmbexSy be nwYjanewe, kesman le kese \n be gwnahewe bmbexSe, delYm bexSyne'))
+print('Kurdish.convert_En_Char_to_Ku', Kurdish.convert_En_Char_to_Ku('bexSyn le gwnah w heLe CawpoSyne! \n to Con heReSet be uagry pRtyne? \n bmbexSy be nwYjanewe, kesman le kese \n be gwnahewe bmbexSe, delYm bexSyne'))
 ```
 
 
 * Converting Arabic Characters to Kurdish:
 ```python
-print('Kurdish.convert_Ar_Char_to_Ku', Kurdish.convert_Ar_Char_to_Ku('الأبجدية العربية هي أبجدية تستخدم أحرف الهجاء العربية للكتابة، وتعد الأبجدية العربية من أكثر الأبجديات استخدامًا بعد الأبجدية اللاتيينة.[2] وتستخدم الأبجدية العربية في العديد من اللغات الآسيوية والأفريقية، مثل اللغة العربي ة، وال لغة الأردية، واللغة العثمانية، واللغة الفارسية. '))
+print('Kurdish.convert_Ar_Char_to_Ku', Kurdish.convert_Ar_Char_to_Ku('“يقول نيتشه: "الدين ثورة العبيد". ويقول ماركس: "الدين أفيون الشعوب". وفي الحقيقة إنّ الدين ثورة وأفيون في آن واحد. فهو عند المترفين أفيون وعند الأنبياء ثورة. وكل دين يبدأ على يد النبي ثورة ثم يستحوذ المترفون عليه بعد ذلك فيحولونه إلى أفيون. وعندئذ يظهر نبي جديد فيعيدها شعواء مرة أخرى.”― علي الوردي, مهزلة العقل البشري '))
 ```
 
 
@@ -54,7 +60,7 @@ print('Kurdish.convert_En_Num_to_Ku', Kurdish.convert_En_Num_to_Ku('0123456789')
 print('Kurdish.convert_Ku_Num_to_En', Kurdish.convert_Ku_Num_to_En('٠١٢٣٤٥٦٧٨٩'))
 ```
 
-## Kurdish Unicode Charachters
+## Kurdish Unicode Characters
 
  Basic Latin|پیت|یونیکۆد
 ----|-------|-----
@@ -115,4 +121,3 @@ you want to contribute in any way:
 ## License
 
 Kurdish is available under the MIT license. See LICENSE file for more info.
-
