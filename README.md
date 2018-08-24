@@ -39,8 +39,6 @@ print('Kurdish.convert_Fa_Num_to_Ku', Kurdish.convert_Fa_Num_to_Ku('٠١٢٣۴۵
 
 * Converting Kurdish Numbers to Persian (Farsi):
 ```
-
-
 print('Kurdish.convert_Ku_Num_to_Fa', Kurdish.convert_Ku_Num_to_Fa('٠١٢٣٤٥٦٧٨٩'))
 ```
 
