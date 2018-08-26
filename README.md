@@ -1,6 +1,6 @@
 # Kurdish 
 
-Welcome to **Kurdish Language Library** - a ***Python*** Library for converting characters and Digits in Persian, English and also Arabic to Kurdish and vice versa.
+Welcome to **Kurdish Language Library** - a ***Python*** Library for converting characters and Digits in Persian, English and Arabic to Kurdish and vice versa.
 
 ## Installation
 
