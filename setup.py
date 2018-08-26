@@ -1,20 +1,24 @@
-import setuptools
+from setuptools import setup
+from os import path
 
-with open('README.txt', 'r', encoding="utf-8") as f:
-    long_description = f.read()
 
-setuptools.setup(
-	name='Kurdish',
-	version='1.0.3',
-	author='Dolan Hêriş',
-	author_email='dolanskurd@mail.com',
-	url='https://github.com/dolanskurd/Kurdish',
-	description=('Kurdish Language Library for converting characters and numbers in Persian, English and also Arabic to Kurdish and vice versa.'),
-	long_description = long_description,
-	keywords='Kurdish Language Module Library',
-	py_modules=['Kurdish'],
-	packages=setuptools.find_packages(),
-	classifiers=[
+myPath = path.abspath(path.dirname(__file__))
+with open(path.join(myPath, 'README.md'), encoding='utf-8') as f:
+	README = f.read()
+
+setup(
+    name='Kurdish',
+    version='1.0.4',
+    author='Dolan Hêriş',
+    author_email='dolanskurd@mail.com',
+    url='https://github.com/dolanskurd',
+    description=('Kurdish Language Library for converting characters and digits in Persian, English and Arabic to Kurdish and vice versa.'),
+    long_description=README,
+    long_description_content_type='text/markdown',
+    license='MIT',
+    keywords='Kurdish Language Module Library Converter Digits Characters',
+    py_modules=['Kurdish'],
+    classifiers=[
         'Development Status :: 4 - Beta',
         'Topic :: Documentation',
         'Topic :: Printing',
@@ -28,6 +32,6 @@ setuptools.setup(
         'Topic :: Text Editors :: Word Processors',
         'Topic :: Utilities',
         'Intended Audience :: Developers',
-	],
+]
 )
 
