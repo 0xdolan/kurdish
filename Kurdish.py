@@ -1,10 +1,10 @@
 # encoding='utf-8'
 
 """
-Kurdish Language Library for converting characters and numbers in Persian, English and also Arabic to Kurdish and vice versa.
+Kurdish Language Library for converting characters and digits in Persian, English and Arabic to Kurdish and vice versa.
 Copyright (C) 2018
 Dolan Hêriş (dolanskurd@mail.com)
-Kurdish Library is available under the MIT license. 
+Kurdish Language Library is available under the MIT license. 
 https://github.com/dolanskurd/Kurdish
 
 """
@@ -19,9 +19,9 @@ def multiReplace(adjustingRule, content):
 	return re.sub(pattern, lambda u: adjustingRule[u.group()], str(content))
 
 '''
-Converting English Numbers to Kurdish Numbers
+Converting English digits to Kurdish digits
 '''
-def convert_En_Num_to_Ku(userText):
+def convert_En_Dig_to_Ku(userText):
     adjustingRule = {
         '0': '٠', # It changes \u0030 to \u0660
         '1': '١', # It changes \u0031 to \u0661
@@ -38,9 +38,9 @@ def convert_En_Num_to_Ku(userText):
     return multiReplace(adjustingRule, userText)
 
 '''
-Converting Kurdish Numbers to English Numbers
+Converting Kurdish digits to English digits
 '''
-def convert_Ku_Num_to_En(userText):
+def convert_Ku_Dig_to_En(userText):
     adjustingRule = {
     	'٠': '0', # It changes \u0660 to \u0030
     	'١': '1', # It changes \u0661 to \u0031
@@ -95,6 +95,7 @@ def convert_En_Char_to_Ku(userText):
 		'e': 'ە', # It changes \u0065 to \u06D5
 		'y': 'ی', # It changes \u0079 to \06CC
 		'Y': 'ێ', # It changes \u0059 to \u06CE
+		',': '،' # It changes \u002C to \u060C
 		}
 	return multiReplace(adjustingRule, userText)
 
@@ -136,13 +137,14 @@ def convert_Ku_Char_to_En(userText):
 		'ە': 'e', # It changes \u06D5 to \u0065
 		'ی': 'y', # It changes \06CC to \u0079
 		'ێ': 'Y', # It changes \u06CE to \u0059
+		'،': ',' # It changes \u060C to \u002C
 		}
 	return multiReplace(adjustingRule, userText)
 
 '''
-Converting Persian (Farsi) Numbers to Kurdish Numbers
+Converting Persian (Farsi) digits to Kurdish digits
 '''
-def convert_Fa_Num_to_Ku(userText):
+def convert_Fa_Dig_to_Ku(userText):
     adjustingRule = {
         '٠': '٠', # It changes \u06F0 to \u0660
         '١': '١', # It changes \u06F1 to \u0661
@@ -159,9 +161,9 @@ def convert_Fa_Num_to_Ku(userText):
     return multiReplace(adjustingRule, userText)
 
 '''
-Converting Kurdish Numbers to Persian (Farsi) Numbers
+Converting Kurdish digits to Persian (Farsi) digits
 '''
-def convert_Ku_Num_to_Fa(userText):
+def convert_Ku_Dig_to_Fa(userText):
     adjustingRule = {
         '٠': '٠', # It changes \u0660 to \u06F0
         '١': '١', # It changes \u0661 to \u06F1
@@ -194,3 +196,5 @@ def convert_Ar_Char_to_Ku(userText):
         'ؤ': 'و', # It changes \u0624 to \u0648
     }
     return multiReplace(adjustingRule, userText)
+
+		
