@@ -1,1 +1,1 @@
-from .Kurdish import *
+
