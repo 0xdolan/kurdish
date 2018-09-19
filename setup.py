@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from setuptools import setup
 from os import path
+from io import open
 
 
 myPath = path.abspath(path.dirname(__file__))
@@ -8,7 +12,7 @@ with open(path.join(myPath, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Kurdish',
-    version='1.0.5',
+    version='1.0.7',
     author='Dolan Hêriş',
     author_email='dolanskurd@mail.com',
     url='https://github.com/dolanskurd',
