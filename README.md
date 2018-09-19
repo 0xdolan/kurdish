@@ -126,6 +126,7 @@ print('Convert Kurdish digits to English:', Kurdish.convert_Ku_Dig_to_En('٠١٢
 I hope you like this library. Feel free to reach out if you have questions or if you want to contribute in any way:
 
 * **[GitHub](https://github.com/dolanskurd)**
+* **[PyPI](https://pypi.org/project/Kurdish/)**
 * **[Twitter](http://www.twitter.com/dolanskurd)**
 * **E-mail: [dolanskurd@mail.com](mailto:dolanskurd@mail.com)**
 
