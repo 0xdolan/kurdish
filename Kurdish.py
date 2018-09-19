@@ -196,5 +196,3 @@ def convert_Ar_Char_to_Ku(userText):
         'ؤ': 'و', # It changes \u0624 to \u0648
     }
     return multiReplace(adjustingRule, userText)
-
-		
