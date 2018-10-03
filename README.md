@@ -4,7 +4,7 @@ Welcome to **Kurdish Language Library** - a ***Python*** Library for converting 
 
 ## Installation
 
-How to installing the module:
+How to install the module:
 
 `
 pip install Kurdish
