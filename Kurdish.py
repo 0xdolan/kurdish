@@ -11,15 +11,13 @@ https://github.com/dolanskurd/Kurdish
 
 import re
 
-
-def multiReplace(adjustingRule, content):
 ''' Replacing code '''
+def multiReplace(adjustingRule, content):
 	pattern = '|'.join(map(re.escape, adjustingRule.keys()))
 	return re.sub(pattern, lambda u: adjustingRule[u.group()], str(content))
 
-
-def convert_En_Dig_to_Ku(userText):
 ''' Converting English digits to Kurdish digits '''
+def convert_En_Dig_to_Ku(userText):
     adjustingRule = {
         '0': '٠', # It changes \u0030 to \u0660
         '1': '١', # It changes \u0031 to \u0661
@@ -35,9 +33,8 @@ def convert_En_Dig_to_Ku(userText):
     }
     return multiReplace(adjustingRule, userText)
 
-
-def convert_Ku_Dig_to_En(userText):
 ''' Converting Kurdish digits to English digits '''
+def convert_Ku_Dig_to_En(userText):
     adjustingRule = {
     	'٠': '0', # It changes \u0660 to \u0030
     	'١': '1', # It changes \u0661 to \u0031
@@ -53,9 +50,8 @@ def convert_Ku_Dig_to_En(userText):
     }
     return multiReplace(adjustingRule, userText)
 
-
-def convert_En_Char_to_Ku(userText):
 ''' Converting English characters to Kurdish (Based on KRG Unicode System (http://unicode.ekrg.org/ku_unicodes.html)) '''
+def convert_En_Char_to_Ku(userText):
 	adjustingRule = {
 		'u': 'ئ', # It changes \u0075 to \u0626
 		'a': 'ا', # It changes \u0061 to \u0627
@@ -94,9 +90,8 @@ def convert_En_Char_to_Ku(userText):
 		}
 	return multiReplace(adjustingRule, userText)
 
-
-def convert_Ku_Char_to_En(userText):
 ''' Converting Kurdish characters to English '''
+def convert_Ku_Char_to_En(userText):
 	adjustingRule = {
 		'ئ': 'u', # It changes \u0626 to \u0075
 		'ا': 'a', # It changes \u0627 to \u0061
@@ -135,9 +130,8 @@ def convert_Ku_Char_to_En(userText):
 		}
 	return multiReplace(adjustingRule, userText)
 
-
-def convert_Fa_Dig_to_Ku(userText):
 ''' Converting Persian (Farsi) digits to Kurdish digits '''
+def convert_Fa_Dig_to_Ku(userText):
     adjustingRule = {
         '٠': '٠', # It changes \u06F0 to \u0660
         '١': '١', # It changes \u06F1 to \u0661
@@ -153,9 +147,8 @@ def convert_Fa_Dig_to_Ku(userText):
     }
     return multiReplace(adjustingRule, userText)
 
-
-def convert_Ku_Dig_to_Fa(userText):
 ''' Converting Kurdish digits to Persian (Farsi) digits '''
+def convert_Ku_Dig_to_Fa(userText):
     adjustingRule = {
         '٠': '٠', # It changes \u0660 to \u06F0
         '١': '١', # It changes \u0661 to \u06F1
@@ -171,9 +164,8 @@ def convert_Ku_Dig_to_Fa(userText):
     }
     return multiReplace(adjustingRule, userText)
 	
-
-def convert_Ar_Char_to_Ku(userText):
 ''' Converting Arabic characters to Kurdish (Based on KRG Unicode System (http://unicode.ekrg.org/ku_unicodes.html)) '''
+def convert_Ar_Char_to_Ku(userText):
     adjustingRule = {
         'ك': 'ک', # It changes \u0643 to \u06A9
 		'ڪ': 'ک', # It changes \u06AA to \u06A9
