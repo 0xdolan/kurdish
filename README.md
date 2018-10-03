@@ -1,16 +1,16 @@
 # Kurdish 
 
-Welcome to **Kurdish Language Library** - a ***Python*** Library for converting characters and Digits in Persian, English and also Arabic to Kurdish and vice versa.
+Welcome to **Kurdish Language Library** - a ***Python*** Library for converting characters and digits in Persian, English and Arabic to Kurdish and vice versa.
 
 ## Installation
 
-Installing the module:
+How to installing the module:
 
 `
 pip install Kurdish
 `
 
-* [Installing Python modules](https://docs.python.org/3/installing/index.html "Installing Python modules")
+* [How to install Python modules](https://docs.python.org/3/installing/index.html "How to install Python modules")
 
 ------------
 
@@ -69,7 +69,7 @@ print('Convert Kurdish digits to English:', Kurdish.convert_Ku_Dig_to_En('٠١٢
 
 ## Kurdish Unicode Characters
 
-| Basic Latin | پیت  | یونیکۆد |
+| English | پیت  | یونیکۆد |
 | ----------- | ---- | ------- |
 | u           | ئ    | U+0626  |
 | a           | ا    | U+0627  |
@@ -130,6 +130,11 @@ I hope you like this library. Feel free to reach out if you have questions or if
 * **[Twitter](http://www.twitter.com/dolanskurd)**
 * **E-mail: [dolanskurd@mail.com](mailto:dolanskurd@mail.com)**
 
+## Donate
+
+If you think it deserves, **Buy Me A Coffee**:
+* **[IDPay (آیدی پی)](https://idpay.ir/dolanskurd)**
+* **[iTunes Gift Cards via PayPal (Email-Delivery)](https://www.paypal.com/us/gifts/brands/itunes)** to my Apple ID: **dolanskurd@gmail.com**
 
 ## License
 
