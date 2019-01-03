@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 from setuptools import setup
 from os import path
@@ -11,7 +10,7 @@ with open(path.join(myPath, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Kurdish',
-    version='1.0.9',
+    version='1.1.0',
     author='Dolan Hêriş',
     author_email='dolanskurd@mail.com',
     url='https://github.com/dolanskurd',
@@ -20,7 +19,7 @@ setup(
     long_description_content_type='text/markdown',
     license='MIT',
     keywords='Kurdish Language Module Library Converter Digits Characters',
-    py_modules=['Kurdish'],
+    py_modules=['ku'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Topic :: Documentation',
