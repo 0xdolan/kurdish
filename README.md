@@ -7,7 +7,7 @@ Welcome to **Kurdish Language Library** - a ***Python*** Library for converting 
 How to install the module:
 
 `
-pip install ku
+pip install Kurdish
 `
 
 * [How to install Python modules](https://docs.python.org/3/installing/index.html "How to install Python modules")
@@ -133,7 +133,7 @@ Character | Unicode Code
 ە         | U+06d5 ARABIC LETTER AE
 و         | U+0648 ARABIC LETTER WAW
 ۆ         | U+06c6 ARABIC LETTER OE
-وو         | U+0648 ARABIC LETTER WAW (X2) Consonant version of the letter is not defined yet. The same shape but different unicode code should be dedicated.
+وو         | U+0648 ARABIC LETTER WAW (X2) Vowel version of the letter is not defined yet. The same shape but different unicode code should be dedicated. This should be count as ONE individual character.
 ی         | U+06cc ARABIC LETTER FARSI YEH
 ێ         | U+06ce ARABIC LETTER YEH WITH SMALL V
 و         | Consonant version of the letter is not defined yet. The same shape but different unicode code should be dedicated.
@@ -191,7 +191,7 @@ W         | U+0057 LATIN CAPITAL LETTER W
 X         | U+0058 LATIN CAPITAL LETTER X
 Y         | U+0059 LATIN CAPITAL LETTER Y
 Z         | U+005a LATIN CAPITAL LETTER Z
-Ĥ         | This letter should be defined as an equivalent for ( ح ).
+Ĥ         | U+0124 LATIN CAPITAL LETTER H WITH CIRCUMFLEX. This letter should be defined as an equivalent for ( ح = U+062d ARABIC LETTER HAH ). No unique letter is defined yet.
 RR         | R̂ (R + ̂  = [U+0052 LATIN CAPITAL LETTER R + U+0302 COMBINING CIRCUMFLEX ACCENT] ). No unique letter is defined yet. The shape should be like ( R̂ ) but there is no defined unicode code.
 LL         | L̂ (L + ̂  = [U+004c LATIN CAPITAL LETTER L + U+0302 COMBINING CIRCUMFLEX ACCENT] ). No unique letter is defined yet. The shape should be like ( L̂ ) but there is no defined unicode code.
 XX         | X̂ (X + ̂  = [U+0058 LATIN CAPITAL LETTER X + U+0302 COMBINING CIRCUMFLEX ACCENT] ) . No unique letter is defined yet. The shape should be like ( X̂ ) but there is no defined unicode code.
