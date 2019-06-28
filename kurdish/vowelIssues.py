@@ -1,6 +1,9 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import re
 
-import ku
+from kurdish import ku
 
 # Before BizrokeRules.py effects:
 
@@ -152,7 +155,11 @@ class Vowel:
             changing "consonant + uw + consonant" to "consonant + û + consonant"
             """
         self.x = x
-        return re.sub(re.compile(r"([^aeêiîouû])(uw)([^aeêiîouû])"), r"\1û\3", x)
+        return re.sub(
+            re.compile(r"([^aeêiîouû])(uw)([^aeêiîouû]|[aeêiîouû]$|[aeêiîouû]\b)"),
+            r"\1û\3",
+            x,
+        )
 
     def vowel_change_yy(self, x):
         """
@@ -160,6 +167,20 @@ class Vowel:
             """
         self.x = x
         return re.sub(re.compile(r"([^aeêiîouû])(ی)(u)"), r"\1îw", x)
+
+    def vowel_change_ii4(self, x):
+        """
+            changing "ûî" to "ûy"
+            """
+        self.x = x
+        return re.sub(re.compile(r"(û)([aeêiîouû]$|[aeêiîouû]\b)"), r"\1y", x)
+
+    def vowel_change_ii5(self, x):
+        """
+            changing "uî" to "ûy"
+            """
+        self.x = x
+        return re.sub(re.compile(r"(u)([aeêiîouû]$|[aeêiîouû]\b)"), r"\1y", x)
 
     def vowel_change_hemze(self, x):
         """
@@ -201,6 +222,8 @@ class Vowel:
             Vowel().vowel_change_u8,
             Vowel().vowel_change_u9,
             Vowel().vowel_change_ii2,
+            Vowel().vowel_change_ii4,
+            Vowel().vowel_change_ii5,
         )
         for func in all_funcs:
             content = func(content)

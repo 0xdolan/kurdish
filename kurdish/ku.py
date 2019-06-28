@@ -1,9 +1,12 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import re
 from unicodedata import name
 
-import bizrokeRules
-import punctuation
-import vowelIssues
+from kurdish import bizrokeRules
+from kurdish import punctuation
+from kurdish import vowelIssues
 
 
 class Hemwar:
@@ -457,6 +460,7 @@ class Hemwar:
             "ة": "ە",  # It changes U+0629 to U+06D5
             "ۂ": "ە",  # It changes U+06C2 to U+06D5
             "ۀ": "ە",  # It changes U+06C0 to U+06D5
+            "ه‌هه‌": "ەهە",  # It changes (\u0647\u200c\u0647\u0647\u200c) to (\u06d5\u0647\u06d5)
             "‌ه": "ە",  # It changes (U+0647 + U+200C) to U+06D5 --> two characters to one
             "‌ە": "ە",  # It changes (U+06D5 + U+200C) to U+06D5 --> two characters to one
             "ؤ": "و",  # It changes U+0624 to U+0648
