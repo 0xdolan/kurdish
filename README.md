@@ -36,7 +36,7 @@ There are some small issues with **[Pellk](http://chawg.org/kurdi-nus/)** which 
 ### Transliteration Arabic-based Kurdish to Latin-based Kurdish
 
 ```python
-import ku
+from kurdish import ku
 text = 'ئەسیری بسکی ئاڵۆزی کچە کوردێکی نەشمیلم، تەماشا کەن چ سەیرێکە بەدەستی دیلەوە دیلم. (هێمن موکریانی)'
 print(ku.Hemwar().transliterate(text))
 
@@ -50,7 +50,7 @@ Esîrî biskî aĺozî kçe kurdêkî neşmîlm, temaşa ken çi seyrêke bedest
   The major difference with KRG System is ( ھ = U+06BE ARABIC LETTER HEH DOACHASHMEE ) letter which normally in Arabic-based writing system ( ه = U+0647 ARABIC LETTER HEH ) alternatively has been used. For making the exact shape, you can use ( ه = U+0647 ARABIC LETTER HEH ) + ( ـ = U+0640 ARABIC TATWEEL ). The result will be ( هـ ).
 
 ```python
-import ku
+from kurdish import ku
 print('Convert English characters to Kurdish:')
 print(ku.Hemwar().En_Char_to_Ku('bexSyn le gwnah w heLe CawpoSyne! \n to Con heReSet be uagry pRtyne? \n bmbexSy be nwYjanewe, kesman le kese \n be gwnahewe bmbexSe, delYm bexSyne'))
 
@@ -65,7 +65,7 @@ Convert English characters to Kurdish:
 - #### Converting Arabic Characters to Kurdish:
 
 ```python
-import ku
+from kurdish import ku
 print('Convert Arabic characters to Kurdish:')
 print(ku.Hemwar().Ar_Char_to_Ku("ك، ي = كوردي  /  ك = كاف"))
 
@@ -77,7 +77,7 @@ Convert Arabic characters to Kurdish:
 - #### Converting Arabic-based Kurdish Characters to English:
 
 ```python
-import ku
+from kurdish import ku
 print('Convert Kurdish characters to English:')
 print(ku.Hemwar().Ku_Char_to_En('\n بەخشین لە گوناه و هەڵە چاوپۆشینە! \nتۆ چۆن هەڕەشەت بە ئاگری پڕتینە?\n بمبەخشی بە نوێژانەوە, کەسمان لە کەسە\n بە گوناهەوە بمبەخشە, دەلێم بەخشینە'))
 
@@ -94,7 +94,7 @@ be gwnahewe bmbexSe, delYm bexSyne
 - #### Getting Unicode code of any character or digit:
 
 ```python
-import ku
+from kurdish import ku
 print('Getting Unicode code for instance: all Arabic specific characters\n')
 print(ku.Hemwar().getUniNum(ku.Hemwar.Ar_Special_chars))
 
@@ -122,7 +122,7 @@ Conversion has been completed successfully.
 - #### Getting all Arabic-based Kurdish Alphabet in a list:
 
 ```python
-import ku
+from kurdish import ku
 print('Arabic-based Kurdish Alphabet: ')
 print(list(ku.Hemwar().ku_alphabet_Ar))
 
@@ -134,7 +134,7 @@ Arabic-based Kurdish Alphabet:
 - #### Getting all Latin-based Kurdish Alphabet in a list:
 
 ```python
-import ku
+from kurdish import ku
 print('Latin-based Kurdish Alphabet: ')
 print(list(ku.Hemwar().ku_alphabet_La_uppercase))
 
@@ -146,7 +146,7 @@ Latin-based Kurdish Alphabet:
 - #### Getting all Latin-based and Arabic-based Kurdish vowels in a list:
 
 ```python
-import ku
+from kurdish import ku
 print('All Latin-based and Arabic-based Kurdish vowels:')
 print(list(ku.Hemwar().ku_all_V))
 
@@ -158,7 +158,7 @@ All Latin-based and Arabic-based Kurdish vowels:
 - #### Converting Persian (Farsi) Digits to Arabic-based Kurdish:
 
 ```python
-import ku
+from kurdish import ku
 print('Convert Persian digits to Arabic-based Kurdish: ')
 print(ku.Hemwar().Fa_Digit_to_Ku('٠١٢٣۴۵۶٧٨٩'))
 
@@ -170,7 +170,7 @@ Convert Persian digits to Arabic-based Kurdish:
 - #### Converting Arabic-based Kurdish Digits to Persian (Farsi):
 
 ```python
-import ku
+from kurdish import ku
 print('Convert Arabic-based Kurdish digits to Persian: ')
 print(ku.Hemwar().Ku_Digit_to_Fa('٠١٢٣٤٥٦٧٨٩'))
 
@@ -182,7 +182,7 @@ Convert Arabic-based Kurdish digits to Persian:
 - #### Converting English Digits to Arabic-based Kurdish:
 
 ```python
-import ku
+from kurdish import ku
 print('Convert English digits to Arabic-based Kurdish: ')
 print(ku.Hemwar().En_Digit_to_Ku('0123456789'))
 
@@ -194,7 +194,7 @@ Convert English digits to Arabic-based Kurdish:
 - #### Converting Arabic-based Kurdish Digits to English:
 
 ```python
-import ku
+from kurdish import ku
 print('Convert Arabic-based Kurdish digits to English: ')
 print(ku.Hemwar().Ku_Digit_to_En('٠١٢٣٤٥٦٧٨٩'))
 
@@ -205,45 +205,45 @@ Convert Arabic-based Kurdish digits to English:
 
 ## Arabic-based Kurdish Characters along with their Unicode Equivalent
 
-| Character | Unicode Code                                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ئ         | U+0626 ARABIC LETTER YEH WITH HAMZA ABOVE                                                                                                        |
-| ا         | U+0627 ARABIC LETTER ALEF                                                                                                                        |
-| ب         | U+0628 ARABIC LETTER BEH                                                                                                                         |
-| پ         | U+067e ARABIC LETTER PEH                                                                                                                         |
-| ت         | U+062a ARABIC LETTER TEH                                                                                                                         |
-| ج         | U+062c ARABIC LETTER JEEM                                                                                                                        |
-| چ         | U+0686 ARABIC LETTER TCHEH                                                                                                                       |
-| ح         | U+062d ARABIC LETTER HAH                                                                                                                         |
-| خ         | U+062e ARABIC LETTER KHAH                                                                                                                        |
-| د         | U+062f ARABIC LETTER DAL                                                                                                                         |
-| ر         | U+0631 ARABIC LETTER REH                                                                                                                         |
-| ڕ         | U+0695 ARABIC LETTER REH WITH SMALL V BELOW                                                                                                      |
-| ز         | U+0632 ARABIC LETTER ZAIN                                                                                                                        |
-| ژ         | U+0698 ARABIC LETTER JEH                                                                                                                         |
-| س         | U+0633 ARABIC LETTER SEEN                                                                                                                        |
-| ش         | U+0634 ARABIC LETTER SHEEN                                                                                                                       |
-| ع         | U+0639 ARABIC LETTER AIN                                                                                                                         |
-| غ         | U+063a ARABIC LETTER GHAIN                                                                                                                       |
-| ف         | U+0641 ARABIC LETTER FEH                                                                                                                         |
-| ڤ         | U+06a4 ARABIC LETTER VEH                                                                                                                         |
-| ق         | U+0642 ARABIC LETTER QAF                                                                                                                         |
-| ک         | U+06a9 ARABIC LETTER KEHEH                                                                                                                       |
-| گ         | U+06af ARABIC LETTER GAF                                                                                                                         |
-| ل         | U+0644 ARABIC LETTER LAM                                                                                                                         |
-| ڵ         | U+06b5 ARABIC LETTER LAM WITH SMALL V                                                                                                            |
-| م         | U+0645 ARABIC LETTER MEEM                                                                                                                        |
-| ن         | U+0646 ARABIC LETTER NOON                                                                                                                        |
-| ه         | U+0647 ARABIC LETTER HEH                                                                                                                         |
-| ە         | U+06d5 ARABIC LETTER AE                                                                                                                          |
-| و         | U+0648 ARABIC LETTER WAW                                                                                                                         |
-| ۆ         | U+06c6 ARABIC LETTER OE                                                                                                                          |
-| وو        | U+0648 ARABIC LETTER WAW (X2) Consonant version of the letter is not defined yet. The same shape but different Unicode code should be dedicated. |
-| ی         | U+06cc ARABIC LETTER FARSI YEH                                                                                                                   |
-| ێ         | U+06ce ARABIC LETTER YEH WITH SMALL V                                                                                                            |
-| و         | Consonant version of the letter is not defined yet. The same shape but different Unicode code should be dedicated.                               |
-| ی         | Consonant version of the letter is not defined yet. The same shape but different Unicode code should be dedicated.                               |
-| بزرۆکە    | Bizroke, Which won't be written in the Arabic-based Kurdish writing System.                                                                      |
+| Character | Unicode Code                                                                                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ئ         | U+0626 ARABIC LETTER YEH WITH HAMZA ABOVE                                                                                                                |
+| ا         | U+0627 ARABIC LETTER ALEF                                                                                                                                |
+| ب         | U+0628 ARABIC LETTER BEH                                                                                                                                 |
+| پ         | U+067e ARABIC LETTER PEH                                                                                                                                 |
+| ت         | U+062a ARABIC LETTER TEH                                                                                                                                 |
+| ج         | U+062c ARABIC LETTER JEEM                                                                                                                                |
+| چ         | U+0686 ARABIC LETTER TCHEH                                                                                                                               |
+| ح         | U+062d ARABIC LETTER HAH                                                                                                                                 |
+| خ         | U+062e ARABIC LETTER KHAH                                                                                                                                |
+| د         | U+062f ARABIC LETTER DAL                                                                                                                                 |
+| ر         | U+0631 ARABIC LETTER REH                                                                                                                                 |
+| ڕ         | U+0695 ARABIC LETTER REH WITH SMALL V BELOW                                                                                                              |
+| ز         | U+0632 ARABIC LETTER ZAIN                                                                                                                                |
+| ژ         | U+0698 ARABIC LETTER JEH                                                                                                                                 |
+| س         | U+0633 ARABIC LETTER SEEN                                                                                                                                |
+| ش         | U+0634 ARABIC LETTER SHEEN                                                                                                                               |
+| ع         | U+0639 ARABIC LETTER AIN                                                                                                                                 |
+| غ         | U+063a ARABIC LETTER GHAIN                                                                                                                               |
+| ف         | U+0641 ARABIC LETTER FEH                                                                                                                                 |
+| ڤ         | U+06a4 ARABIC LETTER VEH                                                                                                                                 |
+| ق         | U+0642 ARABIC LETTER QAF                                                                                                                                 |
+| ک         | U+06a9 ARABIC LETTER KEHEH                                                                                                                               |
+| گ         | U+06af ARABIC LETTER GAF                                                                                                                                 |
+| ل         | U+0644 ARABIC LETTER LAM                                                                                                                                 |
+| ڵ         | U+06b5 ARABIC LETTER LAM WITH SMALL V                                                                                                                    |
+| م         | U+0645 ARABIC LETTER MEEM                                                                                                                                |
+| ن         | U+0646 ARABIC LETTER NOON                                                                                                                                |
+| ه         | U+0647 ARABIC LETTER HEH                                                                                                                                 |
+| ە         | U+06d5 ARABIC LETTER AE                                                                                                                                  |
+| و         | U+0648 ARABIC LETTER WAW                                                                                                                                 |
+| ۆ         | U+06c6 ARABIC LETTER OE                                                                                                                                  |
+| وو        | U+0648 ARABIC LETTER WAW (X2) Vowel version of the letter is not defined yet. The same shape but doubled and different Unicode code should be dedicated. |
+| ی         | U+06cc ARABIC LETTER FARSI YEH                                                                                                                           |
+| ێ         | U+06ce ARABIC LETTER YEH WITH SMALL V                                                                                                                    |
+| و         | Consonant version of the letter is not defined yet. The same shape but different Unicode code should be dedicated.                                       |
+| ی         | Consonant version of the letter is not defined yet. The same shape but different Unicode code should be dedicated.                                       |
+| بزرۆکە    | Bizroke, Which won't be written in the Arabic-based Kurdish writing System.                                                                              |
 
 ## Arabic-based Kurdish Digits along with their Unicode Equivalent
 
@@ -372,7 +372,7 @@ Extra Arabic characters which are **NOT** used in Arabic-based Kurdish but will 
 If you have questions about Kurdish module, or run into problems, or if you want to contribute in any way, feel free to reach out to me via below links:
 
 - **[GitHub](https://github.com/dolanskurd)**
-- **[PyPI](https://pypi.org/project/Kurdish/)**
+- **[PyPI](https://pypi.org/project/kurdish/)**
 - **[Twitter](http://www.twitter.com/dolanskurd)**
 - **E-mail: [dolanskurd@mail.com](mailto:dolanskurd@mail.com)**
 

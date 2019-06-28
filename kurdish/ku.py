@@ -432,23 +432,24 @@ class Hemwar:
         """Converting Arabic characters to Arabic-based Kurdish characters.
         It is also Converting Arabic characters to Persian (Farsi) characters
         as Arabic-based Kurdish and Persian (Farsi) versions are the same.
-        'ك': 'ک', # It changes U+0643 to U+06A9
-        'ڪ': 'ک', # It changes U+06AA to U+06A9
-        'ي': 'ی', # It changes U+064A to U+06CC
-        'ى': 'ی', # It changes U+0649 to U+06CC
-        'ے': 'ی', # It changes U+06D2 to U+06CC
-        'ة': 'ە', # It changes U+0629 to U+06D5
-        'ۂ': 'ە', # It changes U+06C2 to U+06D5
-        'ۀ': 'ە', # It changes U+06C0 to U+06D5
-        '‌ه': 'ە', # It changes (U+0647 + U+200C) to U+06D5 --> two characters to one
-        '‌ە': 'ە', # It changes (U+06D5 + U+200C) to U+06D5 --> two characters to one
-        'ؤ': 'و', # It changes U+0624 to U+0648
-        'ٶ': 'و', # It changes U+0676 to U+0648
-        'ۊ': 'و', # It changes U+06CA to U+0648
-        'أ': 'ا', # It changes U+0623 to U+0627
-        'ﺃ': 'ا', # It changes U+FE83 to U+0627
-        'إ': 'ا', # It changes U+0625 to U+0627
-        'ﺇ': 'ا' # It changes U+FE87 to U+0627
+        "ك": "ک", # It changes U+0643 to U+06A9
+        "ڪ": "ک", # It changes U+06AA to U+06A9
+        "ي": "ی", # It changes U+064A to U+06CC
+        "ى": "ی", # It changes U+0649 to U+06CC
+        "ے": "ی", # It changes U+06D2 to U+06CC
+        "ة": "ە", # It changes U+0629 to U+06D5
+        "ۂ": "ە", # It changes U+06C2 to U+06D5
+        "ۀ": "ە", # It changes U+06C0 to U+06D5
+        "ه‌هه‌": "ەهە",  # It changes (\u0647\u200c\u0647\u0647\u200c) to (\u06d5\u0647\u06d5)
+        "‌ه": "ە", # It changes (U+0647 + U+200C) to U+06D5 --> two characters to one
+        "‌ە": "ە", # It changes (U+06D5 + U+200C) to U+06D5 --> two characters to one
+        "ؤ": "و", # It changes U+0624 to U+0648
+        "ٶ": "و", # It changes U+0676 to U+0648
+        "ۊ": "و", # It changes U+06CA to U+0648
+        "أ": "ا", # It changes U+0623 to U+0627
+        "ﺃ": "ا", # It changes U+FE83 to U+0627
+        "إ": "ا", # It changes U+0625 to U+0627
+        "ﺇ": "ا" # It changes U+FE87 to U+0627
         """
         self.textContent = textContent
         mapping = {
