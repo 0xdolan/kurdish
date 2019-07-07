@@ -697,6 +697,60 @@ class Hemwar:
             word,
         )
 
+    def ali_k_to_uni(self, textContent):
+        """Converting Ali_K texts to Unicode
+            "ث": "پ",  # It changes U+062b to U+067E
+            "ض": "چ",  # It changes U+0636 to U+0686
+            "رِ": "ڕ",  # It changes (U+0631 + U+0650) to U+0695
+            "ذ": "ژ",  # It changes U+0630 to U+0698
+            "ظ": "ڤ",  # It changes U+0638 to U+06A4
+            "ك": "ک",  # It changes U+0643 to U+06A9
+            "ط": "گ",  # It changes U+0637 to U+06AF
+            "لآ": "ڵا",  # It changes (U+0644 + U+0622) to U+0644
+            "لَ": "ڵ",  # It changes (U+0644 + U+064e) to U+06B5
+            "ؤ": "ۆ",  # It changes U+0624 to U+06C6
+            "ة": "ە",  # It changes U+0629 to U+06D5
+            "يَ": "ێ",  # It changes (U+064a + U+064e) to U+06CE
+            "ي": "ی",  # It changes U+064a to U+06CC
+            "ى": "ی",  # It changes U+0649 to U+06CC
+            ",": "،",  # It changes U+002C to U+060C
+            "?": "؟",  # It changes U+003F to U+061F
+            ";": "؛",  # It changes U+003B to U+061B
+            "(": "(",  # It changes U+0028 to U+0028
+            ")": ")",  # It changes U+0029 to U+0029
+            "[": "[",  # It changes U+005B to U+005B
+            "]": "]",  # It changes U+005D to U+005D
+            "{": "{",  # It changes U+007B to U+007B
+            "}": "}",  # It changes U+007D to U+007D
+        """
+        self.textContent = textContent
+        mapping = {
+            "ث": "پ",  # It changes U+062b to U+067E
+            "ض": "چ",  # It changes U+0636 to U+0686
+            "رِ": "ڕ",  # It changes (U+0631 + U+0650) to U+0695
+            "ذ": "ژ",  # It changes U+0630 to U+0698
+            "ظ": "ڤ",  # It changes U+0638 to U+06A4
+            "ك": "ک",  # It changes U+0643 to U+06A9
+            "ط": "گ",  # It changes U+0637 to U+06AF
+            "لآ": "ڵا",  # It changes (U+0644 + U+0622) to U+0644
+            "لَ": "ڵ",  # It changes (U+0644 + U+064e) to U+06B5
+            "ؤ": "ۆ",  # It changes U+0624 to U+06C6
+            "ة": "ە",  # It changes U+0629 to U+06D5
+            "يَ": "ێ",  # It changes (U+064a + U+064e) to U+06CE
+            "ي": "ی",  # It changes U+064a to U+06CC
+            "ى": "ی",  # It changes U+0649 to U+06CC
+            ",": "،",  # It changes U+002C to U+060C
+            "?": "؟",  # It changes U+003F to U+061F
+            ";": "؛",  # It changes U+003B to U+061B
+            "(": "(",  # It changes U+0028 to U+0028
+            ")": ")",  # It changes U+0029 to U+0029
+            "[": "[",  # It changes U+005B to U+005B
+            "]": "]",  # It changes U+005D to U+005D
+            "{": "{",  # It changes U+007B to U+007B
+            "}": "}",  # It changes U+007D to U+007D
+        }
+        return Hemwar().replace_func(mapping, textContent)
+
     # def missing_chars(self, textContent):
 
     #     """Under Progress !!!,

@@ -161,6 +161,13 @@ class Vowel:
             x,
         )
 
+    def vowel_change_uwii(self, x):
+        """
+            changing uw+î+y to û+î+y
+            """
+        self.x = x
+        return re.sub(re.compile(r"(uw)(î)(y)"), r"û\2\3", x)
+
     def vowel_change_yy(self, x):
         """
             changing "ی + u" to "î + w"
@@ -210,6 +217,7 @@ class Vowel:
             Vowel().vowel_change_ii2,
             Vowel().vowel_change_uw,
             Vowel().vowel_change_uw,
+            Vowel().vowel_change_uwii,
             Vowel().vowel_change_u1,
             Vowel().vowel_change_u5,
             Vowel().vowel_change_yy,

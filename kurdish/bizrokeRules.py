@@ -90,7 +90,7 @@ class Bizroke:
         self.x = x
         return re.sub(
             re.compile(
-                r"([aeou]?)([brcmxkwtdzhpgĺ])([nlsrmzĺrş])(i)([rcdmtbsŕnkg][lnw]?)([aêîueo]?)"
+                r"([aeou]?)([brcmxkwtdzhpgĺş])([nlsrmzĺrş])(i)([rcdmtbsŕnkg][lnw]?)([aêîueo]?)"
             ),
             r"\1\2\4\3\5\6",
             x,
