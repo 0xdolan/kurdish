@@ -744,18 +744,19 @@ class Hemwar:
             "ك": "ک",  # It changes U+0643 to U+06A9
             "ط": "گ",  # It changes U+0637 to U+06AF
             "لآ": "ڵا",  # It changes (U+0644 + U+0622) to U+0644
-            'لاَ': "ڵا",  # It changes (U+0644 + U+0627 + U+064e) to U+0644
+            "لاَ": "ڵا",  # It changes (U+0644 + U+0627 + U+064e) to U+0644
             "لَ": "ڵ",  # It changes (U+0644 + U+064e) to U+06B5
             "ؤ": "ۆ",  # It changes U+0624 to U+06C6
-            'وَ':'ۆ', # It changes (U+0648 + U+064e) to U+06C6
-            'ةء':'ە و', # It changes (U+0629 + U+0621) to (U+06d5 + U+0020 + U+0648)
+            "وَ":"ۆ", # It changes (U+0648 + U+064e) to U+06C6
+            "ةء":"ە و", # It changes (U+0629 + U+0621) to (U+06d5 + U+0020 + U+0648)
             "ة": "ە",  # It changes U+0629 to U+06D5
             "يَ": "ێ",  # It changes (U+064a + U+064e) to U+06CE
+            "ىَ": "ێ", # It changes (U+0649 + U+064e) to U+06CE
             "ي": "ی",  # It changes U+064a to U+06CC
             "ى": "ی",  # It changes U+0649 to U+06CC
-            'ء': 'و', # It changes U+0621 to U+0648
-            '\u064e': '', # It remove extra ( َ ) used as (٧)
-            '\u0650': '', # It remove extra ( ِ ) used as (٧)
+            "ء": "و", # It changes U+0621 to U+0648
+            "\u064e": "", # It remove extra ( َ ) used as (٧)
+            "\u0650": "", # It remove extra ( ِ ) used as (٧)
             ",": "،",  # It changes U+002C to U+060C
             "?": "؟",  # It changes U+003F to U+061F
             ";": "؛",  # It changes U+003B to U+061B
