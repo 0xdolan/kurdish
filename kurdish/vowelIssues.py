@@ -78,6 +78,13 @@ class Vowel:
         self.x = x
         return re.sub(re.compile(r"([aeêiîouû])(و$|و\b)"), r"\1w", x)
 
+    def vowel_change_w4(self, x):
+        """
+                changing [و] to [w]
+                """
+        self.x = x
+        return re.sub(re.compile(r"(^و|\bو)"), r"w", x)
+
     def vowel_change_u1(self, x):
         """
             changing vowel "و" to "u"
@@ -240,6 +247,7 @@ class Vowel:
             Vowel().vowel_change_ii4,
             Vowel().vowel_change_ii5,
             Vowel().change_vowel_iiy,
+            Vowel().vowel_change_w4,
         )
         for func in all_funcs:
             content = func(content)
