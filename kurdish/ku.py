@@ -598,8 +598,8 @@ class Hemwar:
         ']': ']', # It changes U+005D to U+005D
         '{': '{', # It changes U+007B to U+007B
         '}': '}' # It changes U+007D to U+007D
-        "ĺĺ": "ĺ", # It removes extra ĺ characters in the text
-        "ŕŕ": "ŕ" # It removes extra ĺ characters in the text
+        # "ĺĺ": "ĺ", # It removes extra ĺ characters in the text
+        # "ŕŕ": "ŕ" # It removes extra ĺ characters in the text
 
         """
         self.textContent = textContent
@@ -684,8 +684,8 @@ class Hemwar:
             "]": "]",  # It changes U+005D to U+005D
             "{": "{",  # It changes U+007B to U+007B
             "}": "}",  # It changes U+007D to U+007D
-            "ĺĺ": "ĺ", # It removes double ĺ characters in the text
-            "ŕŕ": "ŕ" # It removes double ŕ characters in the text
+            # "ĺĺ": "ĺ", # It removes double ĺ characters in the text
+            # "ŕŕ": "ŕ" # It removes double ŕ characters in the text
         }
         return Hemwar().replace_func(mapping, textContent)
 
@@ -747,16 +747,16 @@ class Hemwar:
             "لاَ": "ڵا",  # It changes (U+0644 + U+0627 + U+064e) to U+0644
             "لَ": "ڵ",  # It changes (U+0644 + U+064e) to U+06B5
             "ؤ": "ۆ",  # It changes U+0624 to U+06C6
-            "وَ":"ۆ", # It changes (U+0648 + U+064e) to U+06C6
-            "ةء":"ە و", # It changes (U+0629 + U+0621) to (U+06d5 + U+0020 + U+0648)
+            "وَ": "ۆ",  # It changes (U+0648 + U+064e) to U+06C6
+            "ةء": "ە و",  # It changes (U+0629 + U+0621) to (U+06d5 + U+0020 + U+0648)
             "ة": "ە",  # It changes U+0629 to U+06D5
             "يَ": "ێ",  # It changes (U+064a + U+064e) to U+06CE
-            "ىَ": "ێ", # It changes (U+0649 + U+064e) to U+06CE
+            "ىَ": "ێ",  # It changes (U+0649 + U+064e) to U+06CE
             "ي": "ی",  # It changes U+064a to U+06CC
             "ى": "ی",  # It changes U+0649 to U+06CC
-            "ء": "و", # It changes U+0621 to U+0648
-            "\u064e": "", # It remove extra ( َ ) used as (٧)
-            "\u0650": "", # It remove extra ( ِ ) used as (٧)
+            "ء": "و",  # It changes U+0621 to U+0648
+            "\u064e": "",  # It remove extra ( َ ) used as (٧)
+            "\u0650": "",  # It remove extra ( ِ ) used as (٧)
             ",": "،",  # It changes U+002C to U+060C
             "?": "؟",  # It changes U+003F to U+061F
             ";": "؛",  # It changes U+003B to U+061B
