@@ -196,6 +196,13 @@ class Vowel:
         self.x = x
         return re.sub(re.compile(r"ئ"), r"", x)
 
+    def change_vowel_iiy(self, x):
+        """
+            changing [vowel + 'îy'] to [vowel + 'yî']
+            """
+        self.x = x
+        return re.sub(re.compile(r"([aeêiîouû])(î)(y)"), r"\1\3\2", x)
+
     def vowel_rules(self, content):
         """
             Checking all vowel issues related to Latin-based Kurdish text at once
@@ -232,6 +239,7 @@ class Vowel:
             Vowel().vowel_change_ii2,
             Vowel().vowel_change_ii4,
             Vowel().vowel_change_ii5,
+            Vowel().change_vowel_iiy,
         )
         for func in all_funcs:
             content = func(content)
