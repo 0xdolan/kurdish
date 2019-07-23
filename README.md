@@ -203,6 +203,17 @@ Convert Arabic-based Kurdish digits to English:
 0123456789
 ```
 
+### Converting Ali-k style to unicode
+
+```python
+from kurdish import ku
+text = 'طوماني تيَدا نيية لة هةر دوو دنيا دا ئةركة طشتيةكان دةبنة هؤى خؤشةويستي، هؤى ثةرِينةوة لة تةنطذةكان، هؤى دةرباز بوون لة تووشيان، هؤى ثاراستني سةلامةتي طيان و جةستة و لة وتةيةكدا هؤى لةخؤ رازيكردني خوا و خةلَكي خوا و دلَنيابوون لة داهاتوو'
+print(ku.Hemwar().ali_k_to_uni(text))
+
+OUTPUT:
+گومانی تێدا نییە لە هەر دوو دنیا دا ئەرکە گشتیەکان دەبنە هۆی خۆشەویستی، هۆی پەڕینەوە لە تەنگژەکان، هۆی دەرباز بوون لە تووشیان، هۆی پاراستنی سەلامەتی گیان و جەستە و لە وتەیەکدا هۆی لەخۆ رازیکردنی خوا و خەڵکی خوا و دڵنیابوون لە داهاتوو
+```
+
 ## Arabic-based Kurdish Characters along with their Unicode Equivalent
 
 | Character | Unicode Code                                                                                                                                             |

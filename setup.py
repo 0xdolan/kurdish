@@ -11,7 +11,7 @@ with open(path.join(myPath, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="kurdish",
-    version="1.1.4",
+    version="1.1.5",
     author="Dolan Hêriş",
     author_email="dolanskurd@mail.com",
     url="https://github.com/dolanskurd/kurdish",
