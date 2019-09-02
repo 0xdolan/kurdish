@@ -390,7 +390,7 @@ If you have questions about Kurdish module, or run into problems, or if you want
 ## Donate
 
 If you think it deserves, **DONATE**:
-
+- **[Patreon](https://www.patreon.com/dolanskurd)**
 - **[iTunes Gift Cards via PayPal (Email-Delivery)](https://www.paypal.com/us/gifts/brands/itunes)** to my Apple ID: **dolanskurd@gmail.com**
 
 ## License
