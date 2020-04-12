@@ -6,12 +6,15 @@ an easy GUI Application is ready to use for daily tasks for either
 [Mac](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Mac.zip) or 
 [Others](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI).
 
+## NEW FEATURES
+- **GUI** has been added for `Kurdish` :-)
+
 ## Installation
 
 - GUI Application Installation
 
   Read the introduction [here](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI) and then install the GUI application 
-  for windows [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Windows.zip) and for mac [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Mac.zip) and for more visit [here](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI).
+  for **Windows** [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Windows.zip) and for **macOS** [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Mac.zip) and for more visit [here](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI).
 
 - Python Library Installation
 
@@ -385,7 +388,6 @@ Extra Arabic characters which are **NOT** used in Arabic-based Kurdish but will 
 - Currecting issues with transliterated Latin-based version
 - Capitalizing names such as persons, cities, countries, etc. in Latin-based version with providing a list of names
 - Providing Latin-based to Arabic-based transliteration
-- GUI for Kurdish :-)
 
 ---
 
