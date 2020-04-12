@@ -29,3 +29,9 @@ For other OS type users or developers, you can run the GUI application using the
   on your system, Note that you may get some errors because of the version of the installed python if happened, 
   just uninstall the current python and install one of the required python versions.
   5. Finally write `python main.py` and press enter, or `python3 main.py` in case of having multiple versions of python.
+
+---
+
+## Help
+In case of having any problems you can reach me via this email [KDoblaj@gmail.com](mailto:KDoblaj@gmail.com)
+or my [GitHub account](https://github.com/Azhy-Slemany), or open issues here if needed.
