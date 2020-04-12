@@ -1,18 +1,29 @@
 # Kurdish
 
-Welcome to **Kurdish Language Library** - a **_Python_** library for transliteration from Arabic-based Kurdish to Latin one. It can also be used for converting characters and digits in Persian, English and Arabic to Kurdish and vice versa.
+Welcome to **Kurdish Language Library** - a **_Python_** library for transliteration from Arabic-based Kurdish to Latin one. It can also be used for converting characters and digits in Persian, English and Arabic to Kurdish and vice versa, and now
+an easy GUI Application is ready to use for daily tasks for either 
+[Windows](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Windows.zip) or 
+[Mac](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Mac.zip) or 
+[Others](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI).
 
 ## Installation
 
-How to install the module:
+- GUI Application Installation
 
-`pip install Kurdish`
+  Read the introduction [here](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI) and then install the GUI application 
+  for windows [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Windows.zip) and for mac [here](https://github.com/Azhy-Slemany/kurdish/releases/download/1.0.0/KurdishCharacterConvertor-Mac.zip) and for more visit [here](https://github.com/Azhy-Slemany/kurdish/tree/master/GUI).
 
-for python 3 in Linux:
+- Python Library Installation
 
-`pip3 install Kurdish`
+  How to install the module:
 
-- [How to install Python modules](https://docs.python.org/3.8/installing/index.html)
+  `pip install Kurdish`
+
+  for python 3 in Linux:
+
+  `pip3 install Kurdish`
+
+  - [How to install Python modules](https://docs.python.org/3.8/installing/index.html)
 
 ---
 
@@ -380,12 +391,14 @@ Extra Arabic characters which are **NOT** used in Arabic-based Kurdish but will 
 
 ## Getting help
 
-If you have questions about Kurdish module, or run into problems, or if you want to contribute in any way, feel free to reach out to me via below links:
+If you have questions about the python library **Kurdish** module, or run into problems, or if you want to contribute in any way, feel free to reach out to me via below links:
 
 - **[GitHub](https://github.com/dolanskurd)**
 - **[PyPI](https://pypi.org/project/kurdish/)**
 - **[Twitter](http://www.twitter.com/dolanskurd)**
 - **E-mail: [dolanskurd@mail.com](mailto:dolanskurd@mail.com)**
+
+And for problems in the GUI you can mail to **[azhysulemany@gmail.com](mailto:azhysulemany@gmail.com)**.
 
 ## Donate
 
