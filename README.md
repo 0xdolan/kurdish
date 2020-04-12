@@ -398,7 +398,7 @@ If you have questions about the python library **Kurdish** module, or run into p
 - **[Twitter](http://www.twitter.com/dolanskurd)**
 - **E-mail: [dolanskurd@mail.com](mailto:dolanskurd@mail.com)**
 
-And for problems in the GUI you can mail to **[azhysulemany@gmail.com](mailto:azhysulemany@gmail.com)**.
+And for problems in the GUI you can mail to **[KDoblaj@gmail.com](mailto:KDoblaj@gmail.com)**.
 
 ## Donate
 
