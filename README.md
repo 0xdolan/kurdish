@@ -407,7 +407,6 @@ And for problems in the GUI you can mail to **[KDoblaj@gmail.com](mailto:KDoblaj
 ## Donate
 
 If you think it deserves, **DONATE**:
-- **[Patreon](https://www.patreon.com/dolanskurd)**
 - **[iTunes Gift Cards via PayPal (Email-Delivery)](https://www.paypal.com/us/gifts/brands/itunes)** to my Apple ID: **dolanskurd@gmail.com**
 
 ## License
