@@ -404,11 +404,6 @@ If you have questions about the python library **Kurdish** module, or run into p
 
 And for problems in the GUI you can mail to **[KDoblaj@gmail.com](mailto:KDoblaj@gmail.com)**.
 
-## Donate
-
-If you think it deserves, **DONATE**:
-- **[iTunes Gift Cards via PayPal (Email-Delivery)](https://www.paypal.com/us/gifts/brands/itunes)** to my Apple ID: **dolanskurd@gmail.com**
-
 ## License
 
 Kurdish Language Library is available under the **MIT license**.
